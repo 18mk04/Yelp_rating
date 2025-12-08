@@ -6,6 +6,9 @@ from pydantic import BaseModel
 from datetime import datetime
 from typing import Optional, List
 import gemini_client
+from dotenv import load_dotenv
+load_dotenv()
+
 
 DB = os.getenv("REVIEWS_DB", "reviews.db")
 app = FastAPI()

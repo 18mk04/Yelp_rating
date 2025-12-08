@@ -1,15 +1,18 @@
-import google.generativeai as genai
+from google import genai
 import os
+from dotenv import load_dotenv
 
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+print("Loading .env...")
+load_dotenv()
 
-model = genai.GenerativeModel(
-    model_name="gemini-2.0-flash",
-    generation_config={
-        "response_mime_type": "application/json"
-    }
-)
+API_KEY = os.getenv("GEMINI_API_KEY")
+print("API KEY LOADED:", repr(API_KEY))  # show the raw value
+
+client = genai.Client(api_key=API_KEY)
 
 def generate_text(prompt: str):
-    resp = model.generate_content(prompt)
-    return resp.text  # already JSON
+    response = client.models.generate_content(
+        model="gemini-3-pro-preview",
+        contents=prompt
+    )
+    return response.text
