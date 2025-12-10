@@ -12,7 +12,7 @@ load_dotenv()
 # DATA LOADING
 # -----------------------------
 DATA_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "yelp.csv")
-SAMPLE_N = 200
+SAMPLE_N = 50  # Reduced for rate limit safety
 
 df = pd.read_csv(DATA_PATH)
 
@@ -133,8 +133,10 @@ for variant, tmpl in PROMPTS.items():
 
         try:
             raw = call_gemini(system_prompt, user_prompt)
-        except Exception:
+        except Exception as e:
+            print(f"\nAPI Error: {e}")
             raw = ""
+            time.sleep(5)  # Wait longer on error
 
         parsed = parse_json_from_text(raw)
         valid = parsed is not None and isinstance(parsed.get("predicted_stars"), int)

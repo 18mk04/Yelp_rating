@@ -1,5 +1,5 @@
 variant,json_validity,accuracy_valid,accuracy_overall
-zero_shot,0.0,0,0.0
-few_shot,0.0,0,0.0
-cot_then_json,0.0,0,0.0
-strict_json,0.0,0,0.0
+zero_shot,0.09,0.6111111111111112,0.055
+few_shot,0.0,0.0,0.0
+cot_then_json,0.0,0.0,0.0
+strict_json,0.0,0.0,0.0
