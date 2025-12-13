@@ -5,7 +5,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from datetime import datetime
 from typing import Optional, List
-import gemini_client
+from backend import gemini_client
 from dotenv import load_dotenv
 load_dotenv()
 
