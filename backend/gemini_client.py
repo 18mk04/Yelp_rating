@@ -11,6 +11,6 @@ if not API_KEY:
 genai.configure(api_key=API_KEY)
 
 def generate_text(prompt: str) -> str:
-    model = genai.GenerativeModel('gemini-3.0-pro')
+    model = genai.GenerativeModel('gemini-2.0-flash-exp')
     response = model.generate_content(prompt)
     return response.text or ""
