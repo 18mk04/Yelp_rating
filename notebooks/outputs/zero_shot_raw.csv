@@ -1,30 +1,85 @@
 text,true_star,raw,valid_json,pred_star,explanation
 "We got here around midnight last Friday... the place was dead. However, they were still serving food and we enjoyed some well made pub grub. Service was friendly, quality cocktails were served, and the atmosphere is derived from an old Uno's, which certainly works for a sports bar. It being located in a somewhat commercial area, I can see why it's empty so late on a Friday. From what my friends tell me - this is a great spot for happy hour, and it stays relatively busy thru 10pm.
 
-*UPDATE - Great patio for day-drinking on the weekends!",4,,False,,
-Brought a friend from Louisiana here.  She says that the crawfish etouffee here is the best she's had outside of Louisiana!,5,,False,,
-"Every friday, my dad and I eat here. We order the same thing... pizza wraps. they are good and fillng. iced tea hits the spot. Typical strip mall pizza.",3,,False,,
+*UPDATE - Great patio for day-drinking on the weekends!",4,"```json
+{
+  ""predicted_stars"": 5,
+  ""explanation"": ""The review is overwhelmingly positive, highlighting 'well made pub grub,' 'friendly' service, 'quality cocktails,' and a suitable atmosphere. The initial observation of the place being 'dead' at midnight is contextualized and excused by the reviewer. The update adds another strong positive ('Great patio for day-drinking'). The positive aspects far outweigh any minor, explained-away negatives, indicating a highly satisfactory experience.""
+}
+```",True,5.0,"The review is overwhelmingly positive, highlighting 'well made pub grub,' 'friendly' service, 'quality cocktails,' and a suitable atmosphere. The initial observation of the place being 'dead' at midnight is contextualized and excused by the reviewer. The update adds another strong positive ('Great patio for day-drinking'). The positive aspects far outweigh any minor, explained-away negatives, indicating a highly satisfactory experience."
+Brought a friend from Louisiana here.  She says that the crawfish etouffee here is the best she's had outside of Louisiana!,5,"```json
+{
+  ""predicted_stars"": 5,
+  ""explanation"": ""The review states that the crawfish etouffee is 'the best she's had outside of Louisiana,' with the praise coming from a friend from Louisiana. This is exceptionally high praise, indicating outstanding quality.""
+}
+```",True,5.0,"The review states that the crawfish etouffee is 'the best she's had outside of Louisiana,' with the praise coming from a friend from Louisiana. This is exceptionally high praise, indicating outstanding quality."
+"Every friday, my dad and I eat here. We order the same thing... pizza wraps. they are good and fillng. iced tea hits the spot. Typical strip mall pizza.",3,"```json
+{
+  ""predicted_stars"": 4,
+  ""explanation"": ""The reviewer describes the food as 'good and filling' and the iced tea as 'hits the spot,' indicating satisfaction. Their regular visits ('Every Friday') further suggest a positive, reliable experience. While 'Typical strip mall pizza' implies it's not gourmet or exceptional, it doesn't detract from the overall positive sentiment, suggesting it meets expectations well for its category rather than exceeding all expectations for a perfect 5.""
+}
+```",True,4.0,"The reviewer describes the food as 'good and filling' and the iced tea as 'hits the spot,' indicating satisfaction. Their regular visits ('Every Friday') further suggest a positive, reliable experience. While 'Typical strip mall pizza' implies it's not gourmet or exceptional, it doesn't detract from the overall positive sentiment, suggesting it meets expectations well for its category rather than exceeding all expectations for a perfect 5."
 "My husband and I were really, really disappointed with our experience at Coulter Infiniti.  We brought our 2006 G37 with barely 34,000 miles (and out of warranty) to have the moon roof looked at.  The moon roof wouldn't open or close, but you could hear the motor working.
 
 After leaving the car there all day we get a call that the car needs a whole new moon roof track - which would cost over $3000.  We contacted their corporate office to attempt to get some or all of the cost covered, due to the fact that it's a big repair and the car  is barely out of warranty.  We were flat out denied.  Twice.  
 
 We were dreading the big repair, and decided to bring the car to a different auto shop (which will get a big, fat 5 star review) for a second opinion.  Turns out the track just had a BUILD UP OF DIRT AND DEBRIS and needed to be cleaned out.  Seriously?!?!  Just over $100 later we were on our way!
 
-I find it VERY hard to believe that Coulter didn't know this was the problem.  We are now searching for a new SUV, and will not be choosing Infiniti.  How disappointing.",1,,False,,
-"Love this place!  Was in phoenix 3 weeks for work.  Ate here 3 times.  The squid salad is amazing!  They also have sushi, bibimbap, and tons of other items.  Must try!",5,,False,,
-"This hotel is in a good location for getting to the sports venues downtown, the convention center or to just be in the heart of the city. Granted, it is about a 7 block walk to most of those places, but the lower price and FREE parking definitely make it worthwhile. I usually stay in Scottsdale when i am here for spring training, but I was here for a conference and walked to the convention center each day with no problems. It made sense to be downtown instead of Scottsdale. The hotel is clean, the rooms are nice and big and the free breakfast is decent. I did not visit the pool, so I cannot comment on it. Someone mentioned the area being shady, i walked to and from here at least twice a day including late night and never felt it was a bad area. Also, the review about passing cars was not an issue for me. I was on the street side and I'm a light sleeper. Maybe their window was open?  i do agree that you can hear your neighbors in the bathroom, slightly annoying. In, summary - this hotel is a great choice and if the need arises, I'd stay again.",4,,False,,
+I find it VERY hard to believe that Coulter didn't know this was the problem.  We are now searching for a new SUV, and will not be choosing Infiniti.  How disappointing.",1,"```json
+{
+  ""predicted_stars"": 1,
+  ""explanation"": ""The review expresses extreme disappointment due to a severe misdiagnosis and an inflated repair quote from Coulter Infiniti. The customer was quoted over $3000 for a 'new moon roof track' when another shop fixed the issue for just over $100 by cleaning dirt and debris. This suggests either gross incompetence or dishonesty, leading to a complete loss of trust and a decision to avoid the Infiniti brand altogether. The language used, such as 'really, really disappointed,' 'flat out denied,' 'seriously?!?!', and 'how disappointing,' strongly indicates a 1-star experience.""
+}
+```",True,1.0,"The review expresses extreme disappointment due to a severe misdiagnosis and an inflated repair quote from Coulter Infiniti. The customer was quoted over $3000 for a 'new moon roof track' when another shop fixed the issue for just over $100 by cleaning dirt and debris. This suggests either gross incompetence or dishonesty, leading to a complete loss of trust and a decision to avoid the Infiniti brand altogether. The language used, such as 'really, really disappointed,' 'flat out denied,' 'seriously?!?!', and 'how disappointing,' strongly indicates a 1-star experience."
+"Love this place!  Was in phoenix 3 weeks for work.  Ate here 3 times.  The squid salad is amazing!  They also have sushi, bibimbap, and tons of other items.  Must try!",5,"```json
+{
+  ""predicted_stars"": 5,
+  ""explanation"": ""The reviewer uses overwhelmingly positive language such as 'Love this place!', 'amazing!', and 'Must try!'. The fact that they ate there 3 times during a 3-week stay further indicates high satisfaction and strong recommendation.""
+}
+```",True,5.0,"The reviewer uses overwhelmingly positive language such as 'Love this place!', 'amazing!', and 'Must try!'. The fact that they ate there 3 times during a 3-week stay further indicates high satisfaction and strong recommendation."
+"This hotel is in a good location for getting to the sports venues downtown, the convention center or to just be in the heart of the city. Granted, it is about a 7 block walk to most of those places, but the lower price and FREE parking definitely make it worthwhile. I usually stay in Scottsdale when i am here for spring training, but I was here for a conference and walked to the convention center each day with no problems. It made sense to be downtown instead of Scottsdale. The hotel is clean, the rooms are nice and big and the free breakfast is decent. I did not visit the pool, so I cannot comment on it. Someone mentioned the area being shady, i walked to and from here at least twice a day including late night and never felt it was a bad area. Also, the review about passing cars was not an issue for me. I was on the street side and I'm a light sleeper. Maybe their window was open?  i do agree that you can hear your neighbors in the bathroom, slightly annoying. In, summary - this hotel is a great choice and if the need arises, I'd stay again.",4,"```json
+{
+  ""predicted_stars"": 5,
+  ""explanation"": ""The reviewer highlights several positive aspects including a good location, excellent value with a lower price and free parking, cleanliness, large rooms, and decent free breakfast. They also debunk potential negative points about the area's safety and car noise based on their own experience. The only minor negative is hearing neighbors in the bathroom, which is outweighed by the numerous positives and the concluding statement: 'this hotel is a great choice and if the need arises, I'd stay again,' indicating high satisfaction.""
+}
+```",True,5.0,"The reviewer highlights several positive aspects including a good location, excellent value with a lower price and free parking, cleanliness, large rooms, and decent free breakfast. They also debunk potential negative points about the area's safety and car noise based on their own experience. The only minor negative is hearing neighbors in the bathroom, which is outweighed by the numerous positives and the concluding statement: 'this hotel is a great choice and if the need arises, I'd stay again,' indicating high satisfaction."
 "I love that this place has top seafood plates and choices. The services is hit and miss but once i went in with three friends and we sat at the sushi bar and they saw we weren't getting service they grabbed our order right away. Happy hour is good and drinks aren't expensive anyhow so drinkers celebrate! Cherry roll (i do it without sauce), octopus, anything with their eels, i love the quality of salmon as well. The best part is that FOOD IS SERVED TILL 2AM!!",4,,False,,
 Awesome if you like ramen...even awesomer if you like boba tea!!!,4,,False,,
-"Great place for a ""home office"" morning. One of my favorite places - indoor & outdoor seating. Always busy - they offer breakfast & lunch, their food is awesome! Very generous portions.",5,,False,,
-"1 star for service, but the food is not ok :( they literally put 4 pieces of chicken on my taco. I let that go & figured was a mistake. When I went again, ordered different item & same result. Little to no meat. I will not be going back.",1,,False,,
-"Good food and able to manage a large group easily. Our party had 11 and there wasn't a long wait at all. Highlights: spinach and artichoke dip, onion rings, and tortilla soup. Total tab was only $160 for the whole group.",4,,False,,
+"Great place for a ""home office"" morning. One of my favorite places - indoor & outdoor seating. Always busy - they offer breakfast & lunch, their food is awesome! Very generous portions.",5,"```json
+{
+  ""predicted_stars"": 5,
+  ""explanation"": ""The review uses overwhelmingly positive language such as 'Great place', 'One of my favorite places', 'food is awesome!', and 'Very generous portions'. There are no negative comments whatsoever, indicating a top-tier experience.""
+}
+```",True,5.0,"The review uses overwhelmingly positive language such as 'Great place', 'One of my favorite places', 'food is awesome!', and 'Very generous portions'. There are no negative comments whatsoever, indicating a top-tier experience."
+"1 star for service, but the food is not ok :( they literally put 4 pieces of chicken on my taco. I let that go & figured was a mistake. When I went again, ordered different item & same result. Little to no meat. I will not be going back.",1,"```json
+{
+  ""predicted_stars"": 1,
+  ""explanation"": ""The reviewer explicitly states '1 star for service' and provides multiple strong negative points, including extremely small portion sizes ('4 pieces of chicken on my taco', 'little to no meat') across two visits. The review concludes with a definitive 'I will not be going back,' indicating complete dissatisfaction.""
+}
+```",True,1.0,"The reviewer explicitly states '1 star for service' and provides multiple strong negative points, including extremely small portion sizes ('4 pieces of chicken on my taco', 'little to no meat') across two visits. The review concludes with a definitive 'I will not be going back,' indicating complete dissatisfaction."
+"Good food and able to manage a large group easily. Our party had 11 and there wasn't a long wait at all. Highlights: spinach and artichoke dip, onion rings, and tortilla soup. Total tab was only $160 for the whole group.",4,"```json
+{
+  ""predicted_stars"": 5,
+  ""explanation"": ""The review is overwhelmingly positive, highlighting good food, excellent service for a large group with no wait, specific dish recommendations, and good value for money. There are no negative points mentioned.""
+}
+```",True,5.0,"The review is overwhelmingly positive, highlighting good food, excellent service for a large group with no wait, specific dish recommendations, and good value for money. There are no negative points mentioned."
 "This place is great!
 If you talk to anybody they have a suggestion for a great flavor.
 You can bring in food from another place to enjoy and just enjoy a great atmosphere.
 With the music that someone has an issue with you can just talk to the DJ to get a suggestion they are MORE than accommodating.
 They have a great happy hour prices! 
-Overall great prices, great people, and a great time! If you have the right mind :)",5,,False,,
-Air Jordan! need I say more?,3,,False,,
+Overall great prices, great people, and a great time! If you have the right mind :)",5,"```json
+{
+  ""predicted_stars"": 5,
+  ""explanation"": ""The review uses overwhelmingly positive language throughout, repeatedly using words like 'great,' 'accommodating,' and 'enjoy.' It highlights excellent customer service, a positive atmosphere, good prices, and a generally enjoyable experience with no discernible negatives.""
+}
+```",True,5.0,"The review uses overwhelmingly positive language throughout, repeatedly using words like 'great,' 'accommodating,' and 'enjoy.' It highlights excellent customer service, a positive atmosphere, good prices, and a generally enjoyable experience with no discernible negatives."
+Air Jordan! need I say more?,3,"```json
+{
+  ""predicted_stars"": 5,
+  ""explanation"": ""The review uses an exclamation of high praise ('Air Jordan!') and the rhetorical question 'need I say more?' to convey extreme satisfaction and imply that the product/service is so good it needs no further elaboration. This strongly indicates a top rating.""
+}
+```",True,5.0,The review uses an exclamation of high praise ('Air Jordan!') and the rhetorical question 'need I say more?' to convey extreme satisfaction and imply that the product/service is so good it needs no further elaboration. This strongly indicates a top rating.
 "There are many other reviews which extol the virtues of this location. I just wanted to add some of my experiences as well as a few observations.
 
 First off, at the time of this writing I've been in Phoenix for about a year. Learning about all the necessary places to go in a new town, I had the opportunity to rate businesses objectively (not like 'My mom always went there so I do too...')
@@ -37,7 +92,12 @@ Not all Fry's carry the same things. For instance, I can only depend on this loc
 
 One word of caution, be firm with the staff at the deli. Take a number, insist on their attention, and don't let them gyp you with small wings or the bottom of the pasta selection. I know some of them don't care about their job, but don't let that ruin your experience. Remember: they're probably making minimum wage.
 
-Oh, and the other reviewer's comment about the parking is accurate, although I'm not sure what they can do about it as this is a mall complex.",4,,False,,
+Oh, and the other reviewer's comment about the parking is accurate, although I'm not sure what they can do about it as this is a mall complex.",4,"```json
+{
+  ""predicted_stars"": 4,
+  ""explanation"": ""The reviewer highlights many positive aspects, making Fry's a 'standard go-to place' with great hours, competitive prices, and a good selection of specific items and departments. However, there is notable criticism regarding the deli staff's lack of attention and service quality, which prevents a perfect 5-star rating.""
+}
+```",True,4.0,"The reviewer highlights many positive aspects, making Fry's a 'standard go-to place' with great hours, competitive prices, and a good selection of specific items and departments. However, there is notable criticism regarding the deli staff's lack of attention and service quality, which prevents a perfect 5-star rating."
 "TJ was there for me when my water heater broke and started flooding my garage.  He walked me through fixing it over the phone until he was able to send some help to my house.  Very grateful, and I will continue referring!",5,,False,,
 "So I was pretty excited about this burger joint opening since it's President Obama's favorite... 
 The burger was good. Not great, not bland, just okay. My biggest hang up with this restaurant are the prices! Skip the beverage... it's very over priced. I was also not impressed with the fries- regular or cajun. They were pretty average as well. Stick with the burger and skip the rest is my suggestion to you.",2,,False,,
@@ -62,19 +122,29 @@ Make sure to grab plenty of napkins before you sit down. The burger can make a m
 "Simple but really great cajun food prepared in steamers right in front of you.  Selections include gumbo, pan roasts (a tomato-based broth with chunks of seafood), or seafood creole all with your choice of shrimp, crab, chicken, crawfish, oysters, or all five, with rice. They also have fresh oysters, jumbo shrimp cocktails, salads, and tasty seafood chowder, as well as the occasional lobster special. I've been probably 20 times and still never had a bad dish. The staff is friendly and helpful, and will adjust the spiciness of the dishes to your taste. By far the best option at the Talking Stick resort.
 
 As another reviewer noted, this restaurant is really just a bar with a couple of tables, stuck right off the casino floor. This is definitely not a fine dining spot, with the clanging of slot machines and dead-eyed gamblers shuffling around fifteen feet away. Still, it's definitely worth a visit to Talking Stick. At $10-12 for lunch portions and $17-19 for huge dinner servings, and $25 for a massive platter of oysters, shrimp, crab, mussels, and clams, it's a fantastic value for the quality and tastiness of the food.  Good, reasonably priced seafood can be hard to come by in the valley, but this spot is a gem.",5,,False,,
-"Staff was very rude, bowling prices weren't displayed to the best of their ability, extreme bowling itself was over priced almost $20 per person. The only thing about their extreme bowling was that it was extremely hot, temperature wise. they had many ceiling fans and not one of them turned on. And the bowling equipment malfunctioned three times during our games. It was not a pleasant experience and I don't believe we'll be going to this facility again.",1,,False,,
+"Staff was very rude, bowling prices weren't displayed to the best of their ability, extreme bowling itself was over priced almost $20 per person. The only thing about their extreme bowling was that it was extremely hot, temperature wise. they had many ceiling fans and not one of them turned on. And the bowling equipment malfunctioned three times during our games. It was not a pleasant experience and I don't believe we'll be going to this facility again.",1,"```json
+{
+  ""predicted_stars"": 1,
+  ""explanation"": ""The review highlights numerous significant issues: rude staff, unclear and overpriced services, uncomfortable hot temperature with non-functioning fans, and equipment malfunctions. The overall experience is described as 'not pleasant' with an explicit intent not to return, indicating a completely unsatisfactory visit.""
+}
+```",True,1.0,"The review highlights numerous significant issues: rude staff, unclear and overpriced services, uncomfortable hot temperature with non-functioning fans, and equipment malfunctions. The overall experience is described as 'not pleasant' with an explicit intent not to return, indicating a completely unsatisfactory visit."
 "The staff is really helpful.  I arrived without credit card due to a travel mishap and they were great about providing assistance to get me to a bank to help clear things up.  Their bell staff is friendly and knowledgable.  They can and will get you anywhere in town.  
 
 Room was okay.  Clean, well furnished and updated.  I had a window overlooking the courtyard and I would recommend avoiding that.  It can get a little loud at night.  
 
 Banquet food was good.  Not great, but good and plentiful.  Good variety of dishes for everyone from salads and sandwiches to hot dishes.  A few of the items were a little salty for my taste but with a buffet style service, if something didn't suit, you could replace it with something else.  The break service was astonishing--they really go all out!  
 
-If you are visiting during the right weather, do not miss the pool area.  It's fantastic!",4,,False,,
+If you are visiting during the right weather, do not miss the pool area.  It's fantastic!",4,"{""predicted_stars"": 4, ""explanation"": ""The review is largely positive, highlighting exceptional staff helpfulness, friendly and knowledgeable bell staff, astonishing break service, and a fantastic pool area. While the room was described as 'okay' and a bit loud overlooking the courtyard, and the banquet food was 'good, not great' with some salty items, these minor drawbacks are significantly outweighed by the many positive aspects of the experience.""}",True,4.0,"The review is largely positive, highlighting exceptional staff helpfulness, friendly and knowledgeable bell staff, astonishing break service, and a fantastic pool area. While the room was described as 'okay' and a bit loud overlooking the courtyard, and the banquet food was 'good, not great' with some salty items, these minor drawbacks are significantly outweighed by the many positive aspects of the experience."
 "Someone asked the question in the Yelp talk threads where the best place was for fried things, like french fries and onion rings.  Several people said Ted's had great onion rings......so off I went!  
 
 I expected a smaller place but I was pleasantly suprised when I pulled up to a medium sized store.  I was greated with a smile and asked what I would like.  It was a Sunday afternoon so they were not very busy.  I liked the fact that you tell them what you want and they toss it on the grill right in front of you.  Everything is freshly cooked.  They did the same with the onion rings and french fries too.  Everything was fresh and hot.  My daughter had her favorite....a hot dog, which she loved, and fries which were fresh and crisp.  I had a burger and onion rings.  Yes, the onion rings were delicious!  The batter was great and the onions were a little on the sweet side.  My burger was cooked to perfection.  
 
-This is another great little place we will go back to.  It's also sort of near my work so maybe I'll get out one day and go here for lunch.  Thanks Ted's and Yelpers!",4,,False,,
+This is another great little place we will go back to.  It's also sort of near my work so maybe I'll get out one day and go here for lunch.  Thanks Ted's and Yelpers!",4,"```json
+{
+  ""predicted_stars"": 5,
+  ""explanation"": ""The reviewer describes an overwhelmingly positive experience from start to finish. They were pleasantly surprised by the store size, appreciated the fresh cooking right in front of them, and highly praised every food item mentioned (daughter loved her hot dog, fries were fresh and crisp, burger cooked to perfection, and the onion rings were delicious and lived up to the hype). The reviewer concludes by stating it's a 'great little place we will go back to' and expresses thanks. There are no negative or even neutral comments whatsoever, indicating a top-tier experience.""
+}
+```",True,5.0,"The reviewer describes an overwhelmingly positive experience from start to finish. They were pleasantly surprised by the store size, appreciated the fresh cooking right in front of them, and highly praised every food item mentioned (daughter loved her hot dog, fries were fresh and crisp, burger cooked to perfection, and the onion rings were delicious and lived up to the hype). The reviewer concludes by stating it's a 'great little place we will go back to' and expresses thanks. There are no negative or even neutral comments whatsoever, indicating a top-tier experience."
 "After browsing at the Bookman's next door, we were feeling hungry and were tempted by the notion of tasty burritos.  We ended up getting non-burrito meals, but were fully satisfied with our entrees.  The green chile plate was filled with perfectly cooked pork with a spicy tomatillo sauce that went well with the pork.  The horchata tasted freshly made and was very refreshing and light.  Overall, I think Big Burrito is a good option for those that want a filling meal without breaking your wallet.",4,,False,,
 Prices are often way too high!,1,,False,,
 "I have been to this place twice so far.  The first time I had no idea what to expect since I never heard of it before.  I honestly have no idea what to compare it to but I guess the closest thing is Texas Road House judging by the reviews here on Yelp.  Anyway, I know its not the classiest joint with the best food, but anything is worth a fair shot.  The first time my wife and I went we were in the area doing some shopping and just wanted something quick and casual for dinner.  We didn't expect anything great but to be honest our expectations were exceeded.
