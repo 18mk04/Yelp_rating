@@ -83,5 +83,6 @@ Scalable database instead of SQLite
 Authentication for admin access
 
 
-# Author
-Marikannan
+## Author
+Marikannan  
+GitHub: @18mk04
