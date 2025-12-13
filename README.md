@@ -6,42 +6,6 @@ The project is split into two parts:
 - Task 1: Predicting Yelp star ratings from review text using prompt engineering
 - Task 2: Building a simple review system with AI-generated responses, summaries, and actions
 
----
-
-## Project Structure
-
-Yelp_rating/
-│
-├── backend/ # FastAPI backend
-│ ├── app.py
-│ ├── gemini_client.py
-│ ├── requirements.txt
-│ └── reviews.db
-│
-├── user_dashboard/ # User-facing dashboard
-│ ├── user_app.py
-│ └── requirements.txt
-│
-├── admin_dashboard/ # Admin dashboard
-│ ├── admin_app.py
-│ └── requirements.txt
-│
-├── notebooks/ # Prompt evaluation scripts
-│ ├── rating_prompt_eval.py
-│ └── outputs/
-│
-├── data/
-│ └── yelp.csv
-│
-├── requirements.txt # Root requirements for backend deployment
-├── .env.example
-├── .gitignore
-└── README.md
-
-yaml
-Copy code
-
----
 
 ## Task 1: Rating Prediction Using Prompt Engineering
 
@@ -98,51 +62,18 @@ This part of the project focuses on building a working system rather than evalua
 
 ---
 
-## Environment Setup
-
-Create a `.env` file using `.env.example`:
-
-GEMINI_API_KEY=your_api_key_here
-REVIEWS_DB=reviews.db
-API_BASE=http://localhost:8000
-
-yaml
-Copy code
-
-API keys are never pushed to GitHub.
-
----
-
-## Running the Project Locally
-
-### Backend
-
-```bash
-uvicorn backend.app:app --reload
-User Dashboard
-bash
-Copy code
-python user_dashboard/user_app.py
-Admin Dashboard
-bash
-Copy code
-python admin_dashboard/admin_app.py
-Deployment
-The backend is deployed on Render using:
-
-bash
-Copy code
-uvicorn backend.app:app --host 0.0.0.0 --port $PORT
+## Deployment
+The backend is deployed on Render.
 Environment variables are configured directly in the Render dashboard.
 
-Limitations
+## Limitations
 Free-tier Gemini API limits restrict large-scale testing
 
 Strict JSON output is difficult to enforce with generative models
 
 Rating prediction accuracy depends heavily on prompt wording
 
-Future Improvements
+## Future Improvements
 Better batching and retry logic for API calls
 
 Use of fine-tuned or hybrid classification models
@@ -151,5 +82,7 @@ Scalable database instead of SQLite
 
 Authentication for admin access
 
-Author
-Marikannan
+
+## Author
+Marikannan  
+GitHub: @18mk04
