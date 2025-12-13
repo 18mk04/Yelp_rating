@@ -62,36 +62,18 @@ This part of the project focuses on building a working system rather than evalua
 
 ---
 
-## Running the Project Locally
-
-### Backend
-
-```bash
-uvicorn backend.app:app --reload
-User Dashboard
-bash
-Copy code
-python user_dashboard/user_app.py
-Admin Dashboard
-bash
-Copy code
-python admin_dashboard/admin_app.py
-Deployment
+## Deployment
 The backend is deployed on Render using:
-
-bash
-Copy code
-uvicorn backend.app:app --host 0.0.0.0 --port $PORT
 Environment variables are configured directly in the Render dashboard.
 
-Limitations
+## Limitations
 Free-tier Gemini API limits restrict large-scale testing
 
 Strict JSON output is difficult to enforce with generative models
 
 Rating prediction accuracy depends heavily on prompt wording
 
-Future Improvements
+## Future Improvements
 Better batching and retry logic for API calls
 
 Use of fine-tuned or hybrid classification models
@@ -100,5 +82,5 @@ Scalable database instead of SQLite
 
 Authentication for admin access
 
-Author
+## Author
 Marikannan
