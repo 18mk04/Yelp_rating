@@ -63,7 +63,7 @@ This part of the project focuses on building a working system rather than evalua
 ---
 
 ## Deployment
-The backend is deployed on Render using:
+The backend is deployed on Render.
 Environment variables are configured directly in the Render dashboard.
 
 ## Limitations
