@@ -6,42 +6,6 @@ The project is split into two parts:
 - Task 1: Predicting Yelp star ratings from review text using prompt engineering
 - Task 2: Building a simple review system with AI-generated responses, summaries, and actions
 
----
-
-## Project Structure
-
-Yelp_rating/
-│
-├── backend/ # FastAPI backend
-│ ├── app.py
-│ ├── gemini_client.py
-│ ├── requirements.txt
-│ └── reviews.db
-│
-├── user_dashboard/ # User-facing dashboard
-│ ├── user_app.py
-│ └── requirements.txt
-│
-├── admin_dashboard/ # Admin dashboard
-│ ├── admin_app.py
-│ └── requirements.txt
-│
-├── notebooks/ # Prompt evaluation scripts
-│ ├── rating_prompt_eval.py
-│ └── outputs/
-│
-├── data/
-│ └── yelp.csv
-│
-├── requirements.txt # Root requirements for backend deployment
-├── .env.example
-├── .gitignore
-└── README.md
-
-yaml
-Copy code
-
----
 
 ## Task 1: Rating Prediction Using Prompt Engineering
 
