@@ -82,5 +82,6 @@ Scalable database instead of SQLite
 
 Authentication for admin access
 
-Author
+
+# Author
 Marikannan
