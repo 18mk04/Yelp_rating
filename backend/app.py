@@ -99,3 +99,6 @@ def summarize_review(review_id: int):
     con.commit()
     con.close()
     return ReviewOut(id=r[0], rating=r[1], review=r[2], user_response=r[3], summary=summary, recommended_action=action, created_at=r[6])
+@app.get("/")
+def read_root():
+    return {"message": "Yelp Rating API is running!"}
