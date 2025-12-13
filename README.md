@@ -62,21 +62,6 @@ This part of the project focuses on building a working system rather than evalua
 
 ---
 
-## Environment Setup
-
-Create a `.env` file using `.env.example`:
-
-GEMINI_API_KEY=your_api_key_here
-REVIEWS_DB=reviews.db
-API_BASE=http://localhost:8000
-
-yaml
-Copy code
-
-API keys are never pushed to GitHub.
-
----
-
 ## Running the Project Locally
 
 ### Backend
