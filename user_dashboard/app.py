@@ -77,7 +77,7 @@ st.markdown("""
     footer {visibility: hidden;}
     header {visibility: hidden;}
 
-    /* AI Response Box Styling */
+
     .ai-box {
         background-color: #F0F9FF;
         border-left: 4px solid #0EA5E9;
@@ -129,11 +129,10 @@ with st.container():
         st.success("🎉 Thank you! Your feedback has been recorded.")
 
         if st.session_state.ai_reply:
-            # Styled HTML for the AI response instead of standard st.info
             st.markdown(f"""
             <div class="ai-box">
                 <div style="font-weight: 700; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
-                    🤖 AI Response
+                   Response
                 </div>
                 <div style="line-height: 1.6;">
                     {st.session_state.ai_reply}
