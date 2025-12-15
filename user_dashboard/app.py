@@ -16,20 +16,22 @@ st.set_page_config(
 # --------------------------------------------------
 # CONFIG & SETUP
 # --------------------------------------------------
-API_BASE = os.getenv("API_BASE")
+API_BASE = os.getenv("API_BASE", "http://127.0.0.1:8000") # Added default fallback for local testing
 
-# Initialize Session State for form management
+# Initialize Session State
 if "form_submitted" not in st.session_state:
     st.session_state.form_submitted = False
 if "submit_success" not in st.session_state:
     st.session_state.submit_success = False
+# NEW: Store the AI response here
+if "ai_reply" not in st.session_state:
+    st.session_state.ai_reply = ""
 
 def reset_app():
     """Resets the UI to allow a new submission"""
     st.session_state.form_submitted = False
     st.session_state.submit_success = False
-    # Rerun to clear widgets is handled by the key increment or manual reset patterns
-    # ideally, we just rely on page rerun logic here.
+    st.session_state.ai_reply = "" # Clear the previous reply
 
 # --------------------------------------------------
 # CUSTOM CSS (PROFESSIONAL THEME)
@@ -80,12 +82,6 @@ st.markdown(
         transform: translateY(0px);
     }
 
-    /* Secondary Button (Reset) */
-    div.stButton > button.secondary-btn {
-        background-color: #F3F4F6;
-        color: #374151;
-    }
-
     /* Text Area Styling */
     .stTextArea textarea {
         border-radius: 8px;
@@ -110,7 +106,6 @@ st.markdown(
         font-size: 1.05rem;
     }
     
-    /* Hide Streamlit Branding elements for cleaner look */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
@@ -149,6 +144,20 @@ if st.session_state.form_submitted and st.session_state.submit_success:
                 """, 
                 unsafe_allow_html=True
             )
+            
+            # --- NEW: DISPLAY AI RESPONSE ---
+            if st.session_state.ai_reply:
+                st.markdown(
+                    f"""
+                    <div style="margin-top: 20px; padding: 20px; background: #EFF6FF; border-left: 5px solid #2563EB; border-radius: 4px;">
+                        <h4 style="margin: 0 0 10px 0; color: #1E40AF; font-size: 16px;">🤖 AI Response:</h4>
+                        <p style="margin: 0; color: #1E3A8A; line-height: 1.5;">{st.session_state.ai_reply}</p>
+                    </div>
+                    """,
+                    unsafe_allow_html=True
+                )
+            # -------------------------------
+
             st.write("") # Spacer
             if st.button("Submit Another Review", use_container_width=True):
                 reset_app()
@@ -162,7 +171,6 @@ else:
         st.markdown("### Rate your experience")
         rating_idx = st.feedback("stars")
         
-        # Dynamic label based on rating
         rating_labels = {
             0: "Very Poor 😞",
             1: "Poor 😕",
@@ -183,7 +191,7 @@ else:
             "Review Details",
             placeholder="What did you like? What can we improve?",
             height=150,
-            label_visibility="hidden" # Hidden because we use the placeholder and header context
+            label_visibility="hidden" 
         )
 
         st.write("") # Spacer
@@ -202,7 +210,7 @@ else:
                     "review": review.strip()
                 }
 
-                with st.spinner("Sending feedback..."):
+                with st.spinner("Analyzing feedback..."):
                     try:
                         resp = requests.post(
                             f"{API_BASE}/submit_review",
@@ -211,12 +219,22 @@ else:
                         )
 
                         if resp.status_code == 200:
+                            # --- NEW: EXTRACT AI RESPONSE ---
+                            data = resp.json()
+                            
+                            # IMPORTANT: Check your Backend JSON keys!
+                            # Assuming the backend returns keys like 'ai_response', 'reply', or 'message'.
+                            ai_reply_text = data.get("ai_response") or data.get("reply") or data.get("message") or "Feedback received."
+                            
+                            st.session_state.ai_reply = ai_reply_text
                             st.session_state.form_submitted = True
                             st.session_state.submit_success = True
                             st.rerun()
+                            # -------------------------------
                         else:
                             st.error(f"Server Error: {resp.status_code}")
                             st.code(resp.text)
                     
-                    except requests.exceptions.RequestException:
-                        st.error("Unable to reach the server. Please check your internet connection.")
+                    except requests.exceptions.RequestException as e:
+                        st.error("Unable to reach the server.")
+                        st.write(e)
