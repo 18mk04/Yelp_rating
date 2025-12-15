@@ -1,88 +1,70 @@
-# AI-Powered Review Analysis and Management System
+# Yelp Rating Prediction and AI Review System
 
-This project focuses on using a Large Language Model (Gemini) to work with customer reviews in a practical way. The idea was not just to call an LLM, but to understand how prompt design affects outputs and how AI can be integrated into a small real-world application.
+Author: Marikannan
 
-The project is split into two parts:
-- Task 1: Predicting Yelp star ratings from review text using prompt engineering
-- Task 2: Building a simple review system with AI-generated responses, summaries, and actions
+## Overview
+This project explores the use of Large Language Models (LLMs) for understanding and responding to customer reviews. It is divided into two main parts:
 
+1. Rating prediction using prompt engineering
+2. An AI-powered review response and management system
 
-## Task 1: Rating Prediction Using Prompt Engineering
+The backend is built using FastAPI and integrates Google Gemini for natural language generation.
 
-The goal of this task was to check whether an LLM can correctly predict Yelp star ratings (1–5) using only the review text.
+---
 
-Instead of training a model, different prompt styles were tested.
+## Task 1: Rating Prediction via Prompt Engineering
 
-### Prompt styles tested
+The first task evaluates how accurately an LLM can predict Yelp star ratings (1–5) using only review text.
 
-- **Zero-shot** – Directly asking the model to predict the rating  
-- **Few-shot** – Providing example reviews with ratings before prediction  
-- **Chain-of-thought + JSON** – Asking the model to reason briefly and then output JSON  
-- **Strict JSON** – Forcing the model to return only structured JSON  
+### Prompt Variants
+- Zero-shot prompting
+- Few-shot prompting
+- Chain-of-thought followed by JSON output
+- Strict JSON-only prompting
 
-### Evaluation metrics
-
-- JSON validity (whether output could be parsed)
+### Evaluation Metrics
+- JSON validity
 - Accuracy on valid outputs
 - Overall accuracy
 
-### Results summary
-
-| Prompt Type     | JSON Validity | Accuracy (Valid) | Overall Accuracy |
-|-----------------|--------------|------------------|------------------|
-| Zero-shot       | 0.09         | 0.61             | 0.055            |
-| Few-shot        | 0.00         | 0.00             | 0.00             |
-| CoT + JSON      | 0.00         | 0.00             | 0.00             |
-| Strict JSON     | 0.00         | 0.00             | 0.00             |
-
-Because of strict output constraints and free-tier API limits, only the zero-shot prompt produced usable results.
+Due to free-tier API limits, large-scale evaluation was constrained, but the experiment highlights how prompt structure impacts output reliability.
 
 ---
 
 ## Task 2: AI-Powered Review System
 
-This part of the project focuses on building a working system rather than evaluation.
+The second task focuses on building a practical application.
 
-### What it does
+### Features
+- Submit reviews with star ratings
+- Automatically generate friendly AI responses
+- Store reviews in a database
+- Admin endpoints for summaries and action suggestions
 
-- Users submit a star rating and written review
-- The backend generates a friendly AI response
-- Reviews are stored in a database
-- Admins can view reviews and trigger:
-  - Short summaries
-  - Recommended next actions
+---
 
-### Technology used
-
-- FastAPI (backend)
-- SQLite (database)
-- Gemini LLM (text generation)
-- Python-based dashboards
+## Tech Stack
+- Python
+- FastAPI
+- SQLite
+- Google Gemini API
 - Render (deployment)
 
 ---
 
-## Deployment
-The backend is deployed on Render.
-Environment variables are configured directly in the Render dashboard.
+## Live Demo
+Backend API is deployed at:
 
-## Limitations
-Free-tier Gemini API limits restrict large-scale testing
+https://yelp-rating-1.onrender.com
 
-Strict JSON output is difficult to enforce with generative models
+Interactive API docs:
 
-Rating prediction accuracy depends heavily on prompt wording
+https://yelp-rating-1.onrender.com/docs
 
-## Future Improvements
-Better batching and retry logic for API calls
+---
 
-Use of fine-tuned or hybrid classification models
+## How to Run Locally
 
-Scalable database instead of SQLite
-
-Authentication for admin access
-
-
-## Author
-Marikannan  
-GitHub: @18mk04
+```bash
+pip install -r requirements.txt
+uvicorn backend.app:app --reload
